@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: 'Great Vibes', cursive;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5c3a4e;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(39, 0, 1, 0.7) 0%, rgba(255, 0, 0, 0.7) 100%), 
+              url('https://static.vecteezy.com/system/resources/thumbnails/048/247/672/small_2x/man-and-woman-standing-at-sunset-photo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1; /* Send it behind other content */
+}
+
+.landing-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.landing-page .overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Adds space between heading and button */
+}
+
+
+.landing-page h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.landing-page button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  background-color: #8e0c00;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.landing-page button:hover {
+  background-color: #ff3b2f;
+}
+
+.proposal-cards {
+  text-align: center;
+}
+
+.card {
+  background: rgb(113, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width:300px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.card p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: white;
+  
+}
+.nextButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: rgb(113, 0, 0);
+  color: white;
+  border: 1px solid white; 
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nextButton:hover {
+  background-color: rgb(150, 0, 0);
+  transform: scale(1.05);
+}
+
+.nextButton:active {
+  transform: scale(0.95);
+}
+
+
+.final-decision {
+  text-align: center;
+}
+
+.final-decision h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+
+.final-decision p {
+
+  color: white; /* Ensures the response text is white */
+
+}
+
+
+.buttons button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.yesButton {
+  background-color: #4caf50;
+  color: white;
+}
+
+.noButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: rgb(150, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.noButton:hover {
+  background-color: rgb(180, 0, 0);
+}
+
+.noButton.shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+}
+
+
+
+
+.designer {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #ffffff;
+}
